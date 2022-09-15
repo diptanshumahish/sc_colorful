@@ -1,0 +1,20 @@
+[
+    {
+        "date": "12",
+        "suffix": "th",
+        "month": "September",
+        "eventName": "Hackathon Event",
+        "eventDetails": "A hackathon event , organized by SC CSE",
+        "linkText": "Register Now",
+        "link": ""
+    },
+    {
+        "date": "1",
+        "suffix": "st",
+        "month": "October",
+        "eventName": "Something Event",
+        "eventDetails": "A something event , with some stuff",
+        "linkText": "Read More",
+        "link": ""
+    }
+]
