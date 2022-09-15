@@ -14,7 +14,7 @@ toggler.addEventListener('click', function () {
   }
 })
 
-//data fetch api using json
+//data fetch api using json for the upcoming events
 fetch("./upcoming.json")
   .then(function (response) {
     return response.json();
@@ -50,5 +50,48 @@ function appendData(data) {
                 `
   }).join('')} 
         <div class="upcomingSeeMore"> <a href="">See More </a></div> 
+            `
+}
+//data fetch for the news cards
+fetch("./news.json")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    appendDataNews(data);
+  })
+  .catch(function (err) {
+    console.log(err);
+  })
+function appendDataNews(data) {
+  document.getElementById("newsCards").innerHTML = `
+            ${data.map(function (news) {
+    return `
+    <div class="newsCard" data-aos="fade-up" data-aos-delay="${news.delay}">
+    <div class="newsTopImage">
+        <div class="newsTopInnerImage" style="
+        background-image:url('${news.imageLink}');
+        "></div>
+    </div>
+    <div class="newsBottomContent" data-aos="fade-right">
+       <div class="newsMainText">
+        <div class="newsBottomHeading" ">
+            ${news.newsHeading}
+        </div>
+        <div class="newsBottomDetails">
+            ${news.newsContent}
+        </div>
+       </div>
+        <div class="newsBottomRow">
+            <div class="newsDate"> ${news.newsDate}</div>
+            <div class="newsSeeMore"> <a href="${news.clickLink}">See More</a></div>
+        </div>
+    </div>
+</div>
+    
+
+
+                `
+  }).join('')} 
             `
 }
