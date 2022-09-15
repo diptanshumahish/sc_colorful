@@ -3,6 +3,7 @@
     --themeMainBlue: #219ebc;
     --themeHighlightsBlue: #8ecae6;
     --backGround: #eaf1f2;
+    --backGroundLight: #eaf1f2bc;
     --themeYellow: #ffb703;
     --themeYellowDark: #fb8500;
     --textColor: #111;
@@ -14,6 +15,7 @@
 
 .dark {
     --backGround: #1e2529;
+    --backGroundLight: #1e2529b9;
     --textColor: #eaf1f2;
 }
 
@@ -43,17 +45,29 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    padding: 2vh 5vw;
+    padding: 0px 5vw;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--backGroundLight);
+    backdrop-filter: blur(1px);
 }
 
 #nav-Left {
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-size: 1vw;
     color: var(--themeMainBlue);
 
+}
+
+.navLogo {
+    background: url(/assets/Sccse_loggo__1_-removebg-preview.png);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    mix-blend-mode: difference;
 }
 
 #nav-left-top {
@@ -78,15 +92,23 @@ nav {
 }
 
 #nav-right {
-    background-color: var(--themeYellow);
+    background-color: transparent;
     border-radius: 4vw;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 1vh 2vw;
+    border: 1px solid var(--themeYellowDark);
+}
+
+#nav-right:hover {
+    background-color: var(--themeYellowDark);
+    transition: 1500ms ease;
+    color: #111;
 }
 
 #nav-right a {
     text-decoration: none;
-    color: var(--backGround);
+    color: var(--textColor);
+
 }
 
 /* body {

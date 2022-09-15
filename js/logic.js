@@ -29,7 +29,6 @@ function appendData(data) {
   document.getElementById("upcomingCards").innerHTML = `
             ${data.map(function (events) {
     return `
-       
                     <div class="upcomingCard">
                         <div class="upcomingCardleft">
                             <div class="date" data-aos="fade-up">
