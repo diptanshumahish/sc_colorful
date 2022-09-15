@@ -48,6 +48,7 @@ function appendData(data) {
 
 
                 `
-  }).join('')}  
+  }).join('')} 
+        <div class="upcomingSeeMore"> <a href="">See More </a></div> 
             `
 }
