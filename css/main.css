@@ -527,6 +527,67 @@ header {
     color: rgba(17, 17, 17, 0.79);
 }
 
+/* newsletter section  */
+#newsLetter {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#newsLetterInnerContainer {
+    background-color: #fb8500;
+    min-width: 60%;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+#newsLetterInnerContainer h2 {
+    text-align: center;
+    font-size: 45px;
+}
+
+#newsLetterInnerContainer {
+    text-align: center;
+}
+
+#email {
+    min-width: 80%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#emailField {
+    min-width: 90%;
+    padding: 11px;
+    border: 1px solid #111;
+    background-color: var(--themeYellowDark);
+    border-radius: 3px 0 0 3px;
+    outline: 1px solid transparent;
+
+}
+
+#emailField::placeholder {
+    color: #111;
+}
+
+#submitNewsLetter {
+    background-color: #111;
+    padding: 11px;
+    border-radius: 0 3px 3px 0;
+    color: #eaf1f2;
+    cursor: pointer;
+
+}
+
+#emailField:focus {
+    border: 2px solid #111;
+    outline: none;
+}
+
+
 
 
 /* footer region */
