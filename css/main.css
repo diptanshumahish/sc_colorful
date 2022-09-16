@@ -149,7 +149,7 @@ header {
     height: 95%;
     border-radius: 2px;
     width: 95%;
-    background: url(/assets/testImage-min.JPG);
+    background: url(/assets/testImage-min.webp);
     background-size: cover;
     box-shadow: rgba(99, 99, 99, .2) 0px 2px 8px 0px
 }
