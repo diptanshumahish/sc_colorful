@@ -13,7 +13,15 @@ toggler.addEventListener('click', function () {
     window.localStorage.setItem("theme", "dark");
   }
 })
-
+const mobToggle = document.getElementById('mobileToggle');
+mobToggle.addEventListener('click', function () {
+  document.body.classList.toggle("dark");
+  if (theme == "dark") {
+    window.localStorage.setItem("theme", "light");
+  } else {
+    window.localStorage.setItem("theme", "dark");
+  }
+})
 //data fetch api using json for the upcoming events
 fetch("./upcoming.json")
   .then(function (response) {
