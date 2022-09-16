@@ -39,15 +39,15 @@ function appendData(data) {
     return `
                     <div class="upcomingCard">
                         <div class="upcomingCardleft">
-                            <div class="date">
+                            <div class="date" data-aos="fade-up">
                                 <span>${events.date}</span>${events.suffix}
                             </div>
                             <div class="month">${events.month}</div>
                         </div>
                         <div class="upcomingCardRight">
-                            <h3 class="eventName">${events.eventName}</h3>
-                            <h4 class="eventDetails">${events.eventDetails}</h4>
-                            <div class="upLink"><a href="${events.link}">${events.linkText}</a></div>
+                            <h3 class="eventName" data-aos="fade-right">${events.eventName}</h3>
+                            <h4 class="eventDetails" data-aos="fade-right">${events.eventDetails}</h4>
+                            <div class="upLink" data-aos="fade-right"><a href="${events.link}">${events.linkText}</a></div>
 
                         </div>
                     </div>
@@ -67,9 +67,6 @@ fetch("./news.json")
   .then(function (data) {
     appendDataNews(data);
   })
-  .catch(function (err) {
-    console.log(err);
-  })
 function appendDataNews(data) {
   document.getElementById("newsCards").innerHTML = `
             ${data.map(function (news) {
@@ -80,7 +77,7 @@ function appendDataNews(data) {
         background-image:url('${news.imageLink}');
         "></div>
     </div>
-    <div class="newsBottomContent">
+    <div class="newsBottomContent" data-aos="fade-up">
        <div class="newsMainText">
         <div class="newsBottomHeading" ">
             ${news.newsHeading}
