@@ -74,13 +74,13 @@ function appendDataNews(data) {
   document.getElementById("newsCards").innerHTML = `
             ${data.map(function (news) {
     return `
-    <div class="newsCard" data-aos="fade-up" data-aos-delay="${news.delay}">
+    <div class="newsCard">
     <div class="newsTopImage">
         <div class="newsTopInnerImage" style="
         background-image:url('${news.imageLink}');
         "></div>
     </div>
-    <div class="newsBottomContent" data-aos="fade-right">
+    <div class="newsBottomContent">
        <div class="newsMainText">
         <div class="newsBottomHeading" ">
             ${news.newsHeading}
