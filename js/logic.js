@@ -39,15 +39,15 @@ function appendData(data) {
     return `
                     <div class="upcomingCard">
                         <div class="upcomingCardleft">
-                            <div class="date" data-aos="fade-up">
+                            <div class="date">
                                 <span>${events.date}</span>${events.suffix}
                             </div>
                             <div class="month">${events.month}</div>
                         </div>
                         <div class="upcomingCardRight">
-                            <h3 class="eventName" data-aos="fade-right">${events.eventName}</h3>
-                            <h4 class="eventDetails" data-aos="fade-right">${events.eventDetails}</h4>
-                            <div class="upLink" data-aos="fade-right"><a href="${events.link}">${events.linkText}</a></div>
+                            <h3 class="eventName">${events.eventName}</h3>
+                            <h4 class="eventDetails">${events.eventDetails}</h4>
+                            <div class="upLink"><a href="${events.link}">${events.linkText}</a></div>
 
                         </div>
                     </div>
