@@ -30,24 +30,21 @@ fetch("./upcoming.json")
   .then(function (data) {
     appendData(data);
   })
-  .catch(function (err) {
-    console.log(err);
-  })
 function appendData(data) {
   document.getElementById("upcomingCards").innerHTML = `
             ${data.map(function (events) {
     return `
                     <div class="upcomingCard">
                         <div class="upcomingCardleft">
-                            <div class="date" data-aos="fade-up">
+                            <div class="date">
                                 <span>${events.date}</span>${events.suffix}
                             </div>
                             <div class="month">${events.month}</div>
                         </div>
                         <div class="upcomingCardRight">
-                            <h3 class="eventName" data-aos="fade-right">${events.eventName}</h3>
-                            <h4 class="eventDetails" data-aos="fade-right">${events.eventDetails}</h4>
-                            <div class="upLink" data-aos="fade-right"><a href="${events.link}">${events.linkText}</a></div>
+                            <h3 class="eventName">${events.eventName}</h3>
+                            <h4 class="eventDetails">${events.eventDetails}</h4>
+                            <div class="upLink"><a href="${events.link}">${events.linkText}</a></div>
 
                         </div>
                     </div>
@@ -77,7 +74,7 @@ function appendDataNews(data) {
         background-image:url('${news.imageLink}');
         "></div>
     </div>
-    <div class="newsBottomContent" data-aos="fade-up">
+    <div class="newsBottomContent">
        <div class="newsMainText">
         <div class="newsBottomHeading" ">
             ${news.newsHeading}
