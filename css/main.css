@@ -21,7 +21,7 @@
 @font-face {
     font-family: "quaz";
     src: url(/fonts/Qaz-ZV74m.ttf);
-    font-display: swap;
+    font-display: swap
 }
 
 * {
@@ -29,7 +29,7 @@
     margin: 0;
     padding: 0;
     font-family: "quaz";
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
 }
 
 #mobileMenu {
@@ -755,7 +755,7 @@ footer {
 
     #scHeadInnerImage {
         border-radius: unset;
-        box-shadow: unset;
+        box-shadow: unset
     }
 
     #scHeadTextMain {
@@ -846,12 +846,12 @@ footer {
     #innerImage {
         background-position: center;
         border-radius: unset;
-        box-shadow: unset;
+        box-shadow: unset
     }
 
     #home-Image {
         min-width: 95vw;
-        border-radius: 2px;
+        border-radius: 2px
     }
 
     #home-Image-Text-Left p:nth-child(1) {
@@ -920,14 +920,13 @@ footer {
     #scHeadImage {
         padding: 10px;
         min-width: 95%;
-        border-radius: unset;
+        border-radius: unset
     }
 
     #scHeadInnerImage {
         border-radius: unset;
-        box-shadow: unset;
+        box-shadow: unset
     }
-
 
     #scHeadTextMain {
         text-align: left;
@@ -1025,15 +1024,12 @@ footer {
 
     .newsTopInnerImage {
         border-radius: unset;
-        box-shadow: unset;
+        box-shadow: unset
     }
 
-
-
-    /* newsletter  */
     #newsLetterInnerContainer {
         border-radius: unset;
-        box-shadow: unset;
+        box-shadow: unset
     }
 
     #email {
@@ -1069,5 +1065,10 @@ footer {
     #emailField:focus {
         border: 2px solid #111;
         outline: none
+    }
+
+    #submitNewsLetter,
+    #emailField {
+        border-radius: unset
     }
 }
