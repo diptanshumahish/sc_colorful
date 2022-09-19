@@ -1008,6 +1008,19 @@ footer {
         gap: 15px
     }
 
+    .newsTopInnerImage {
+        border-radius: unset;
+        box-shadow: unset;
+    }
+
+
+
+    /* newsletter  */
+    #newsLetterInnerContainer {
+        border-radius: unset;
+        box-shadow: unset;
+    }
+
     #email {
         min-width: 90%;
         padding: 20px;
