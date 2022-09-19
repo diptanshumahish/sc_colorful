@@ -820,6 +820,10 @@ footer {
 }
 
 @media screen and (max-width:675px) {
+    body {
+        background-image: unset;
+    }
+
     nav {
         padding: 15px;
         background-color: var(--backGround)
