@@ -753,6 +753,11 @@ footer {
         font-weight: 600
     }
 
+    #scHeadInnerImage {
+        border-radius: unset;
+        box-shadow: unset;
+    }
+
     #scHeadTextMain {
         font-size: 18px
     }
@@ -839,11 +844,14 @@ footer {
     }
 
     #innerImage {
-        background-position: center
+        background-position: center;
+        border-radius: unset;
+        box-shadow: unset;
     }
 
     #home-Image {
-        min-width: 95vw
+        min-width: 95vw;
+        border-radius: 2px;
     }
 
     #home-Image-Text-Left p:nth-child(1) {
@@ -911,8 +919,15 @@ footer {
 
     #scHeadImage {
         padding: 10px;
-        min-width: 95%
+        min-width: 95%;
+        border-radius: unset;
     }
+
+    #scHeadInnerImage {
+        border-radius: unset;
+        box-shadow: unset;
+    }
+
 
     #scHeadTextMain {
         text-align: left;
