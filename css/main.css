@@ -839,7 +839,7 @@ footer {
         gap: 20px
     }
 
-    #mobileMenu a {
+    #mobileMenu div {
         color: var(--textColor)
     }
 
