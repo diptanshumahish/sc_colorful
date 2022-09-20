@@ -96,3 +96,8 @@ function appendDataNews(data) {
   }).join('')} 
             `
 }
+
+// loader
+setTimeout(function () {
+  document.getElementById('loader').style.display = "none";
+}, 2500);

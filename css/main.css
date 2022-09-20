@@ -88,6 +88,21 @@ nav {
     font-weight: 300
 }
 
+#themeChange {
+    cursor: pointer;
+    color: var(--textColor);
+}
+
+#themeChange:hover {
+    transform: 200ms ease;
+    transform: rotate(350deg);
+}
+
+#themeChange:active {
+    transition: 400ms ease;
+    transform: rotate(100deg);
+}
+
 #nav-right {
     background-color: transparent;
     border-radius: 4vw;
@@ -106,6 +121,115 @@ nav {
     text-decoration: none;
     color: var(--textColor)
 }
+
+/* loader part  */
+#loader {
+    z-index: 1000;
+    position: fixed;
+    transition: 500ms ease;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--backGround);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainAnim {
+    width: 200px;
+    height: 5vh;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loading {
+    background-color: var(--themeYellow);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
+}
+
+.load1 {
+    transition: 300ms ease;
+    animation-name: loading1;
+    animation-duration: 1s;
+    animation-delay: 400ms;
+    animation-iteration-count: infinite;
+}
+
+.load2 {
+    transition: 300ms ease;
+    animation-name: loading2;
+    animation-duration: 1s;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+}
+
+.load3 {
+    transition: 300ms ease;
+    animation-name: loading3;
+    animation-duration: 1s;
+    animation-delay: 150ms;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes loading1 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+@keyframes loading2 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-40px);
+
+    }
+
+    100% {
+        transform: translateY(0px);
+
+    }
+
+}
+
+@keyframes loading3 {
+    0% {
+        transform: translateY(0px);
+
+    }
+
+    50% {
+        transform: translateY(-60px);
+
+    }
+
+    100% {
+        transform: translateY(0px);
+
+    }
+
+}
+
+
 
 body {
     background-color: var(--backGround);
