@@ -100,6 +100,7 @@ function appendDataNews(data) {
 // loader
 setTimeout(function () {
   document.getElementById('loader').style.display = "none";
+  document.body.style.overflow = "scroll";
 }, 2500);
 setTimeout(function () {
   document.getElementById('loader').style.transform = "translateY(-100vh)";

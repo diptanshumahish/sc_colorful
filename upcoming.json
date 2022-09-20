@@ -25,5 +25,15 @@
         "eventDetails": "A something event , with some stuff",
         "linkText": "Read More",
         "link": ""
+    },
+    {
+        "date": "3",
+        "suffix": "rd",
+        "month": "October",
+        "eventName": "Seminar 1",
+        "eventDetails": "A something event , with some stuff",
+        "linkText": "Read More",
+        "link": "",
+        "aos":"fade-up"
     }
 ]
