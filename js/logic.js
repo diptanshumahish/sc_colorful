@@ -109,7 +109,9 @@ setTimeout(function () {
 const menuPage = document.getElementById('mobileMenuPage');
 document.getElementById('mobielMenuToggle').addEventListener(('click'), function () {
   menuPage.style.display = "block";
+  document.body.style.overflow = "hidden";
 });
 function closeMenu() {
   menuPage.style.display = "none";
+  document.body.style.overflow = "scroll";
 }
