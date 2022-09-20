@@ -36,13 +36,12 @@
     display: none
 }
 
-/* the menu page below  */
 #mobileMenuPage {
-    display: none;
+    display: none
 }
 
 .showMenu {
-    display: block;
+    display: block
 }
 
 #mobileMenuPage {
@@ -56,18 +55,18 @@
     bottom: 0;
     height: 100vh;
     width: 100vw;
-    transition: all 500ms ease-in;
+    transition: all .5s ease-in;
     animation-name: menu;
-    animation-duration: 400ms;
+    animation-duration: .4s
 }
 
 @keyframes menu {
     0% {
-        transform: translateY(-100vh);
+        transform: translateY(-100vh)
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(0)
     }
 }
 
@@ -75,7 +74,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
+    align-items: center
 }
 
 #innerMenu {
@@ -84,7 +83,7 @@
     display: flex;
     align-items: center;
     color: var(--textColor);
-    justify-content: center;
+    justify-content: center
 }
 
 #close-btn {
@@ -92,12 +91,12 @@
     position: absolute;
     right: 0;
     padding: 30px;
-    font-size: 50px;
+    font-size: 50px
 }
 
 #close-btn:after {
     transform: rotate(180deg);
-    transition: 300ms ease;
+    transition: .3s ease
 }
 
 #mobMenuOptions div {
@@ -106,18 +105,18 @@
     width: 80vw;
     border-radius: 4px;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 700;
     color: #111;
-    background-color: var(--themeYellowDark);
+    background-color: var(--themeYellowDark)
 }
 
 #mobMenuOptions div:nth-child(6) {
-    background-color: unset;
+    background-color: unset
 }
 
 #socialLinksMenu a {
     color: var(--textColor);
-    font-size: 30px;
+    font-size: 30px
 }
 
 nav {
@@ -174,17 +173,17 @@ nav {
 
 #themeChange {
     cursor: pointer;
-    color: var(--textColor);
+    color: var(--textColor)
 }
 
 #themeChange:hover {
-    transform: 200ms ease;
-    transform: rotate(350deg);
+    transform: .2s ease;
+    transform: rotate(350deg)
 }
 
 #themeChange:active {
-    transition: 400ms ease;
-    transform: rotate(100deg);
+    transition: .4s ease;
+    transform: rotate(100deg)
 }
 
 #nav-right {
@@ -206,11 +205,10 @@ nav {
     color: var(--textColor)
 }
 
-/* loader part  */
 #loader {
     z-index: 1000;
     position: fixed;
-    transition: 500ms ease;
+    transition: .5s ease;
     top: 0;
     right: 0;
     height: 100vh;
@@ -218,7 +216,7 @@ nav {
     background-color: var(--backGround);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 #mainAnim {
@@ -227,7 +225,7 @@ nav {
     overflow: visible;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .loading {
@@ -235,92 +233,79 @@ nav {
     height: 20px;
     width: 20px;
     box-shadow: rgba(99, 99, 99, .2) 0px 2px 8px 0px;
-    border-radius: 50%;
-
-
+    border-radius: 50%
 }
 
 .load1 {
-    transition: 300ms ease;
+    transition: .3s ease;
     animation-name: loading1;
     animation-duration: 1s;
-    animation-delay: 400ms;
-    animation-iteration-count: infinite;
+    animation-delay: .4s;
+    animation-iteration-count: infinite
 }
 
 .load2 {
-    transition: 300ms ease;
+    transition: .3s ease;
     animation-name: loading2;
     animation-duration: 1s;
-    animation-delay: 100ms;
-    animation-iteration-count: infinite;
+    animation-delay: .1s;
+    animation-iteration-count: infinite
 }
 
 .load3 {
-    transition: 300ms ease;
+    transition: .3s ease;
     animation-name: loading3;
     animation-duration: 1s;
-    animation-delay: 150ms;
-    animation-iteration-count: infinite;
+    animation-delay: .15s;
+    animation-iteration-count: infinite
 }
-
 
 @keyframes loading1 {
     0% {
-        transform: translateY(0px);
+        transform: translateY(0px)
     }
 
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-20px)
     }
 
     100% {
-        transform: translateY(0px);
+        transform: translateY(0px)
     }
-
 }
 
 @keyframes loading2 {
     0% {
-        transform: translateY(0px);
+        transform: translateY(0px)
     }
 
     50% {
-        transform: translateY(-40px);
-
+        transform: translateY(-40px)
     }
 
     100% {
-        transform: translateY(0px);
-
+        transform: translateY(0px)
     }
-
 }
 
 @keyframes loading3 {
     0% {
-        transform: translateY(0px);
-
+        transform: translateY(0px)
     }
 
     50% {
-        transform: translateY(-60px);
-
+        transform: translateY(-60px)
     }
 
     100% {
-        transform: translateY(0px);
-
+        transform: translateY(0px)
     }
-
 }
-
-
 
 body {
     background-color: var(--backGround);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='4000' height='2000' preserveAspectRatio='none' viewBox='0 0 4000 2000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask16054%26quot%3b)' fill='none'%3e%3cpath d='M794.05 262.72L789.71 274.77 777 273.18 772.66 285.22 759.95 283.63 755.61 295.68 742.9 294.09' stroke='rgba(251%2c 133%2c 0%2c 1)' stroke-width='1' stroke-dasharray='3%2c 2'%3e%3c/path%3e%3ccircle r='166.66666666666666' cx='1501.96' cy='1823.07' fill='rgba(33%2c 158%2c 188%2c 1)'%3e%3c/circle%3e%3crect width='900' height='900' clip-path='url(%26quot%3b%23SvgjsClipPath16055%26quot%3b)' x='256.89' y='1460.04' fill='url(%23SvgjsPattern16056)' transform='rotate(196.59%2c 706.89%2c 1910.04)'%3e%3c/rect%3e%3crect width='963.2' height='963.2' clip-path='url(%26quot%3b%23SvgjsClipPath16057%26quot%3b)' x='713.85' y='322.79' fill='url(%23SvgjsPattern16058)' transform='rotate(296.34%2c 1195.45%2c 804.39)'%3e%3c/rect%3e%3cpath d='M1231.3799999999999 352.90000000000003 L1876.05 123.94L1241.4411713420252 -73.85382865797476z' stroke='rgba(251%2c 133%2c 0%2c 1)' stroke-width='1.28' stroke-dasharray='4%2c 4'%3e%3c/path%3e%3crect width='60' height='60' clip-path='url(%26quot%3b%23SvgjsClipPath16059%26quot%3b)' x='793.8' y='1097.14' fill='url(%23SvgjsPattern16060)' transform='rotate(259.45%2c 823.8%2c 1127.14)'%3e%3c/rect%3e%3crect width='876' height='876' clip-path='url(%26quot%3b%23SvgjsClipPath16061%26quot%3b)' x='2893.38' y='-6.05' fill='url(%23SvgjsPattern16062)' transform='rotate(213.33%2c 3331.38%2c 431.95)'%3e%3c/rect%3e%3cpath d='M2549.57 439.11a5.6 5.6 0 1 0-1.38 11.11 5.6 5.6 0 1 0 1.38-11.11zM2547.6 454.99a5.6 5.6 0 1 0-1.39 11.11 5.6 5.6 0 1 0 1.39-11.11zM2545.62 470.86a5.6 5.6 0 1 0-1.39 11.12 5.6 5.6 0 1 0 1.39-11.12zM2543.64 486.74a5.6 5.6 0 1 0-1.38 11.12 5.6 5.6 0 1 0 1.38-11.12z' stroke='rgba(142%2c 202%2c 230%2c 1)' stroke-width='2.53'%3e%3c/path%3e%3crect width='432' height='432' clip-path='url(%26quot%3b%23SvgjsClipPath16063%26quot%3b)' x='3171.55' y='1327.69' fill='url(%23SvgjsPattern16064)' transform='rotate(308.72%2c 3387.55%2c 1543.69)'%3e%3c/rect%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask16054'%3e%3crect width='4000' height='2000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern16056'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(251%2c 133%2c 0%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath16055'%3e%3ccircle r='225' cx='706.89' cy='1910.04'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='12.04' height='12.04' patternUnits='userSpaceOnUse' id='SvgjsPattern16058'%3e%3cpath d='M6.02 1L6.02 11.04M1 6.02L11.04 6.02' stroke='rgba(251%2c 133%2c 0%2c 1)' fill='none' stroke-width='1'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath16057'%3e%3ccircle r='240.8' cx='1195.45' cy='804.39'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern16060'%3e%3cpath d='M3 1L3 5M1 3L5 3' stroke='rgba(251%2c 133%2c 0%2c 1)' fill='none' stroke-width='1.43'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath16059'%3e%3ccircle r='15' cx='823.8' cy='1127.14'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern16062'%3e%3cpath d='M3 1L3 5M1 3L5 3' stroke='rgba(142%2c 202%2c 230%2c 1)' fill='none' stroke-width='1.91'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath16061'%3e%3ccircle r='219' cx='3331.38' cy='431.95'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern16064'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(251%2c 133%2c 0%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath16063'%3e%3ccircle r='108' cx='3387.55' cy='1543.69'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
-    overflow: hidden;
+    overflow: hidden
 }
 
 header {
@@ -437,7 +422,7 @@ header {
     margin-top: -65px;
     color: var(--themeYellowDark);
     font-size: 9vw;
-    font-weight: 800;
+    font-weight: 800
 }
 
 #scHeadInnerImage {
@@ -473,7 +458,7 @@ header {
     height: 460px;
     width: 100%;
     border-radius: 5px;
-    box-shadow: rgba(99, 99, 99, .2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, .2) 0px 2px 8px 0px
 }
 
 #scHeadTextMain {
@@ -1032,7 +1017,7 @@ footer {
 
 @media screen and (max-width:675px) {
     body {
-        background-image: unset;
+        background-image: unset
     }
 
     nav {
