@@ -104,3 +104,12 @@ setTimeout(function () {
 setTimeout(function () {
   document.getElementById('loader').style.transform = "translateY(-100vh)";
 }, 2200);
+
+// toogling the menu 
+const menuPage = document.getElementById('mobileMenuPage');
+document.getElementById('mobielMenuToggle').addEventListener(('click'), function () {
+  menuPage.style.display = "block";
+});
+function closeMenu() {
+  menuPage.style.display = "none";
+}
