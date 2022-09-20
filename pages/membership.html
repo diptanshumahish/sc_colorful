@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description -->
+    <meta name="author" content="SC CSE" />
+    <meta name="description" content="The official website of Students' Chapter CSE AOT. " />
+    <meta name="keywords"
+        content="SC CSE, sccse, csesc, sc sce, students' chapter cse, students' chapter aot, iei students' chapter, Students' chapter cse, student chapter " />
+    <meta property="og:site_name" content="Students' Chapter Cse" />
+    <meta property="og:title" content="Students' Chapter Cse" />
+    <meta property="og:description" content="The official website of Students' Chapter CSE AOT." />
+    <meta property="og:type" content="website" />
+    <title>Memberships @SCCSE</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/assets/Sccse_loggo-removebg-preview.png" type="image/x-icon">
+    <!-- css files below -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/membership.css">
+</head>
+
+<body>
+    <div id="mobileMenuPage">
+        <div id="close-btn" onclick="closeMenu()">&times;</div>
+        <div id="innerMenu">
+            <div id="mobMenuOptions">
+                NAVIGATION
+                <div onclick="location.href='../index.html'">Home</div>
+                <div onclick="location.href='../pages/events.html'">Events</div>
+                <div onclick="location.href='../pages/teams.html'">Teams</div>
+                <div onclick="location.href='../pages/gallery.html'">Gallery</div>
+                <div onclick="location.href='../pages/membership.html'">Become a member</div>
+                SOCIALS
+                <div id="socialLinksMenu">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <!-- Will hide the navmid and nav right containers in the mobile view and replace with a menu hamburger -->
+        <div id="nav-Left">
+            <div class="navLogo">
+            </div>
+            <div class="navText">
+                <p id="nav-left-top">Students' Chapter</p>
+                <p>CSE</p>
+            </div>
+
+        </div>
+        <div id="nav-mid">
+            <a href="../index.html">HOME</a>
+            <a href="../pages/membership.html">TEAM</a>
+            <a href="../pages/gallery.html">GALLERY</a>
+            <a href="../pages/events.html">EVENTS</a>
+            <div id="themeChange"><i class="fa-solid fa-moon"></i></div>
+        </div>
+        <div id="nav-right">
+            <a href="../pages/membership.html">Become a member!</a>
+        </div>
+        <div id="mobileMenu">
+            <div id="mobileToggle"><i class="fa-solid fa-moon"></i></div>
+            <div id="mobielMenuToggle"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </nav>
+    <main>
+        <h2 id="memHeading">
+            Hey friend! Thinking about, <br><span>why to take a "Students' Chapter membership?"</span>
+        </h2>
+        <div id="memReasons">
+            <h3 class="memReaonsHeadingh3">
+                Here's why:
+            </h3>
+            <div id="memCards">
+                <div class="memReasonCard">
+                    <div class="memReasonHead">
+                        Some Reason
+                    </div>
+                    <div class="memReasonDetails">
+                        some more details here may tell something false idk Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Maiores error sapiente ut quidem eius aliquid dolores sint optio itaque illum.
+                    </div>
+                </div>
+            </div>
+            <div id="memCards">
+                <div class="memReasonCard">
+                    <div class="memReasonHead">
+                        Some Reason
+                    </div>
+                    <div class="memReasonDetails">
+                        some more details here may tell something false idk Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Maiores error sapiente ut quidem eius aliquid dolores sint optio itaque illum.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="FormHeading">MEMBERSHIP FORM</h3>
+        <div id="formContent">
+            <form action="" id="regForm">
+                <label for="name">
+                    <p class="formele">
+                        Your Full Name
+                    </p>
+                    <input class="inputBox" type="text" name="name" id="name" placeholder="Enter your name" required>
+                </label>
+
+                <label for="address">
+                    <p class="formele">
+                        Your Full Address
+                    </p>
+                    <input class="inputBox" type="text" name="address" id="address"
+                        placeholder="Enter your Full Address" required>
+                </label>
+                <label for="email">
+                    <p class="formele">
+                        Your email
+                    </p>
+                    <input class="inputBox" type="email" name="email" id="memEmail" placeholder="Enter your email"
+                        required>
+                </label>
+                <label for="aotemail">
+                    <p class="formele">
+                        Your AOT email
+                    </p>
+                    <input class="inputBox" type="email" name="aotemail" id="aotemail"
+                        placeholder="Enter your AOT email" required>
+                </label>
+                <label for="uniRoll">
+                    <p class="formele">
+                        Your University Roll Number
+                    </p>
+                    <input class="inputBox" type="number" name="uniRoll" id="uniRoll"
+                        placeholder="Enter your University Roll NUmber" required>
+                </label>
+                <label for="sem">
+                    <p class="formele">
+                        Your sem
+                    </p>
+                    <select class="inputBox" name="semester" id="stream" required>
+                        <option value="1CSE1">1CSE1</option>
+                        <option value="1CSE2">1CSE2</option>
+                        <option value="1CSE3">1CSE3</option>
+                        <option value="2CSE1">2CSE1</option>
+                        <option value="2CSE2">2CSE2</option>
+                        <option value="2CSE3">2CSE3</option>
+                        <option value="2CSE1">3CSE1</option>
+                        <option value="2CSE2">3CSE2</option>
+                        <option value="2CSE3">3CSE3</option>
+                    </select>
+                </label>
+                <div class="help"><a href="#">Need any Help? Mail Us</a></div>
+                <button id="submitButton" type="submit"> <i class="fa-solid fa-lock"></i> Pay 536 and Submit</button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <div id="footerLeft">
+            <h2>CSE Students' Chapter,</h2>
+            AOT, Adisaptagram
+
+        </div>
+        <div id="footerRight">
+            <h3> Contact Us</h3>
+            <div class="call"><i class="fa-solid fa-phone"></i><a href="">+1930910291</a></div>
+            <div class="mail"><i class="fa-regular fa-envelope"></i><a href="">something@email.com</a></div>
+            <div id="socialLinks">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-square-github"></i></a>
+                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+        </div>
+
+        </div>
+    </footer>
+    <script src="/js/logic.js"></script>
+
+    <!-- font awesome things  -->
+    <script src="https://kit.fontawesome.com/0ac8d96b33.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

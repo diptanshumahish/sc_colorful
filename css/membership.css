@@ -1,0 +1,128 @@
+body {
+    overflow: scroll;
+}
+
+#memHeading {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 45px;
+    color: var(--textColor);
+}
+
+#memHeading span {
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--themeYellowDark);
+}
+
+.memReaonsHeadingh3 {
+    font-size: 40px;
+}
+
+
+#memReasons {
+    text-align: center;
+    margin-top: 100px;
+    color: var(--textColor);
+}
+
+#memCards {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.memReasonCard {
+    max-width: 60vw;
+}
+
+.memReasonHead {
+    background-color: #111;
+    color: #eaf1f2;
+    padding: 10px 20px;
+    font-size: 35px;
+    text-align: left;
+    border-radius: 6px 6px 0 0;
+    font-weight: 900;
+}
+
+.memReasonDetails {
+    color: #111;
+    background-color: var(--themeYellowDark);
+    padding: 20px;
+    border-radius: 0 0 4px 4px;
+    text-align: left;
+}
+
+.FormHeading {
+    text-align: center;
+    padding: 30px;
+    color: var(--themeYellowDark);
+    font-size: 45px;
+    font-weight: 900;
+
+}
+
+#formContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#regForm {
+    padding: 40px;
+    background-color: var(--themeYellowDark);
+    max-width: 60vw;
+    min-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 4px;
+}
+
+.inputBox {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #111;
+    background-color: var(--themeYellowDark);
+}
+
+label p {
+    font-size: 30px;
+}
+
+#submitButton {
+    padding: 5px;
+    background-color: #111;
+    color: #eaf1f2;
+    border: none;
+    border-radius: 2px;
+}
+
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width:960px) {
+    #memHeading {
+        font-size: 30px;
+        padding: 100px 20px;
+        padding-bottom: 30px;
+    }
+
+    #memHeading span {
+        font-size: 40px;
+    }
+
+    .memReasonCard {
+        max-width: 90vw;
+    }
+
+    #regForm {
+        max-width: 90vw;
+    }
+}
