@@ -138,7 +138,7 @@ nav {
 }
 
 #mainAnim {
-    width: 200px;
+    width: 150px;
     height: 5vh;
     overflow: visible;
     display: flex;
@@ -150,7 +150,9 @@ nav {
     background-color: var(--themeYellow);
     height: 20px;
     width: 20px;
+    box-shadow: rgba(99, 99, 99, .2) 0px 2px 8px 0px;
     border-radius: 50%;
+
 
 }
 
@@ -386,7 +388,7 @@ header {
     height: 460px;
     width: 100%;
     border-radius: 5px;
-    box-shadow: rgba(99, 99, 99, .2) 0px 2px 8px 0px
+    box-shadow: rgba(99, 99, 99, .2) 0px 2px 8px 0px;
 }
 
 #scHeadTextMain {

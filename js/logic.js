@@ -101,3 +101,6 @@ function appendDataNews(data) {
 setTimeout(function () {
   document.getElementById('loader').style.display = "none";
 }, 2500);
+setTimeout(function () {
+  document.getElementById('loader').style.transform = "translateY(-100vh)";
+}, 2200);
