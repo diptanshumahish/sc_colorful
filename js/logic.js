@@ -1,4 +1,4 @@
-
+window.addEventListener('load', AOS.refresh)
 //change theme;
 const toggler = document.getElementById('themeChange');
 const theme = window.localStorage.getItem("theme");
@@ -34,20 +34,22 @@ function appendData(data) {
   document.getElementById("upcomingCards").innerHTML = `
             ${data.map(function (events) {
     return `
-                    <div class="upcomingCard">
-                        <div class="upcomingCardleft">
-                            <div class="date">
-                                <span>${events.date}</span>${events.suffix}
-                            </div>
-                            <div class="month">${events.month}</div>
-                        </div>
-                        <div class="upcomingCardRight">
-                            <h3 class="eventName">${events.eventName}</h3>
-                            <h4 class="eventDetails">${events.eventDetails}</h4>
-                            <div class="upLink"><a href="${events.link}">${events.linkText}</a></div>
+    <div class="upcomingCard" data-aos="fade-up" >
+    <div class="upcomingCardleft" >
+        <div class="date">
+            <span >${events.date}</span>${events.suffix}
+        </div>
+        <div class="month">${events.month}</div>
+    </div>
+    <div class="upcomingCardRight">
+        <h3 class="eventName">${events.eventName}</h3>
+        <h4 class="eventDetails">${events.eventDetails}</h4>
+        <div class="upLink"><a href="${events.link}">${events.linkText}</a>
+        </div>
 
-                        </div>
-                    </div>
+    </div>
+</div>
+                   
     
 
 
