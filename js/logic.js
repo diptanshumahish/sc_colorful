@@ -1,4 +1,4 @@
-window.addEventListener('load', AOS.refresh)
+
 //change theme;
 const toggler = document.getElementById('themeChange');
 const theme = window.localStorage.getItem("theme");
@@ -70,7 +70,7 @@ function appendDataNews(data) {
   document.getElementById("newsCards").innerHTML = `
             ${data.map(function (news) {
     return `
-    <div class="newsCard">
+    <div class="newsCard" data-aos="fade-up">
     <div class="newsTopImage">
         <div class="newsTopInnerImage" style="
         background-image:url('${news.imageLink}');

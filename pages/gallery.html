@@ -19,6 +19,8 @@
     <link rel="shortcut icon" href="/assets/Sccse_loggo-removebg-preview.png" type="image/x-icon">
     <!-- css files below -->
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/gallery.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -69,6 +71,29 @@
             <div id="mobielMenuToggle"><i class="fa-solid fa-bars"></i></div>
         </div>
     </nav>
+    <main>
+        <section id="gal">
+            <div id="galHeader">
+                <div class="galFilter">
+                    <div id="galHeaderText">
+                        <h2>IMAGE GALLERY</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="galCards">
+                <div id="galHeading">
+                    (Click on the card to open the event)
+                </div>
+                <div class="galCardsBack">
+                    <div id="galCardsArea">
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
 
 
     <footer>
@@ -93,10 +118,14 @@
         </div>
     </footer>
     <script src="/js/logic.js"></script>
+    <script src="/js/gal.js"></script>
 
     <!-- font awesome things  -->
     <script src="https://kit.fontawesome.com/0ac8d96b33.js" crossorigin="anonymous"></script>
-
+    <script>
+        AOS.init();
+    </script>
+    <script src="/js/logic.js"></script>
 </body>
 
 </html>

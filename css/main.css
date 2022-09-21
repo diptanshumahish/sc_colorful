@@ -126,7 +126,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0 5vw;
+    padding: 5px 5vw;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -426,7 +426,9 @@ header {
 }
 
 #scHeadInnerImage {
-    background-image: url("https://images.unsplash.com/flagged/photo-1564401398070-9a0ec00bd38a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80")
+    background-image: url(/assets/testttt.JPG);
+    background-position: center;
+    background-size: cover;
 }
 
 #scHeadNote {
@@ -620,7 +622,7 @@ header {
     padding-top: 50px
 }
 
-#newsHead h1:nth-child(1) {
+#newsHead h2:nth-child(1) {
     color: transparent;
     font-size: 6vw;
     font-weight: 400;
@@ -628,7 +630,7 @@ header {
     -webkit-text-stroke-color: var(--themeMainBlue)
 }
 
-#newsHead h1:nth-child(2) {
+#newsHead h2:nth-child(2) {
     margin-top: -65px;
     color: var(--themeMainBlue);
     font-weight: 400;
@@ -881,11 +883,11 @@ footer {
         padding-top: 100px
     }
 
-    #newsHead h1:nth-child(1) {
+    #newsHead h2:nth-child(1) {
         font-size: 7.5vw
     }
 
-    #newsHead h1:nth-child(2) {
+    #newsHead h2:nth-child(2) {
         margin-top: -44px;
         font-size: 9vw
     }
@@ -996,7 +998,7 @@ footer {
         transform: rotate(0deg)
     }
 
-    #newsHead h1:nth-child(2) {
+    #newsHead h2:nth-child(2) {
         margin-top: -20px;
         font-size: 9vw
     }
@@ -1202,13 +1204,13 @@ footer {
         padding-top: 50px
     }
 
-    #newsHead h1:nth-child(1) {
+    #newsHead h2:nth-child(1) {
         color: transparent;
         font-size: 8vw;
         -webkit-text-stroke-width: 1px
     }
 
-    #newsHead h1:nth-child(2) {
+    #newsHead h2:nth-child(2) {
         margin-top: -20px;
         font-size: 15vw;
         font-weight: 800
