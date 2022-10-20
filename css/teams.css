@@ -1,0 +1,122 @@
+body {
+    overflow: scroll;
+}
+
+#teamsHeader {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#teamsHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60vw;
+    margin-top: 100px;
+    text-align: center;
+    color: var(--themeYellowDark);
+    font-size: 100px;
+}
+
+#teamsHeading span {
+    font-size: 40px;
+    color: var(--textColor);
+}
+
+#TeamsPossible {
+    color: transparent;
+    font-size: 200px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--themeYellow)
+}
+
+/* teams below  */
+#techTeam {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: var(--textColor);
+}
+
+#techTeam p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#techCards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    z-index: 300;
+    overflow-y: visible;
+    overflow-x: scroll;
+}
+
+/* teams cards  */
+.techCard {
+    min-height: 400px;
+    border-radius: 4px;
+    max-height: 400px;
+    min-width: 260px;
+    max-width: 260px;
+    background-color: var(--themeYellowDark);
+    box-shadow: rgba(99, 99, 99, .2) 0px 2px 8px 0px
+}
+
+.techCard:hover {
+    transform: scale(1.5);
+}
+
+.techTopImage {
+    height: 290px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+
+}
+
+.techTopInnerImage {
+    background-image: url("https://images.unsplash.com/photo-1660239182405-77b04854c237?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, .2) 0px 2px 8px 0px
+}
+
+.techBottomContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+}
+
+.techBottomName {
+    font-size: 25px;
+    font-weight: 900;
+    color: #111;
+}
+
+.techBottomDetails {
+    font-size: 18px;
+    color: #111;
+}
+
+.techBottomConnect {
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, .2) 0px 2px 8px 0px
+}
